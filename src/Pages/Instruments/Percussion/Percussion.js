@@ -9,7 +9,7 @@ export default function Percussion() {
 
     useEffect(() => {
         if (loggedIn) {
-            fetch("https://github.com/SoftwareFuze/MTMSBandSite-Frontend/getUserData", {
+            fetch("https://mtms-band-site.herokuapp.com/getUserData", {
                 'method': 'GET',
                 'headers': {
                     'Content-Type': 'application/json',

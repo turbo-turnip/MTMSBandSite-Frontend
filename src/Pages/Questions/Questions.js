@@ -12,7 +12,7 @@ export default function Questions() {
 
     useEffect(() => {
         if (loggedIn) {
-            fetch("http://mtms-band-site.herokuapp.com/getUserData", {
+            fetch("https://mtms-band-site.herokuapp.com/getUserData", {
                 'method': 'GET',
                 'headers': {
                     'Content-Type': 'application/json',
@@ -30,7 +30,7 @@ export default function Questions() {
     }, [ loggedIn ]);
 
     useEffect(() => {
-        fetch("http://mtms-band-site.herokuapp.com/getQuestions")
+        fetch("https://mtms-band-site.herokuapp.com/getQuestions")
             .then(response => response.json())
             .then(response => {
                 setQuestionsLoading(false);
@@ -44,7 +44,7 @@ export default function Questions() {
 
     const newQuestionHandler = value => {
         if (value ?? value !== "") {
-            fetch("http://mtms-band-site.herokuapp.com/createQuestion", {
+            fetch("https://mtms-band-site.herokuapp.com/createQuestion", {
                 'method': 'POST',
                 'headers': { 'Content-Type': 'application/json' },
                 'body': JSON.stringify({

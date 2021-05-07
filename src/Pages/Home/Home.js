@@ -9,7 +9,7 @@ export default function Home() {
 
     useEffect(() => {
         if (loggedIn) {
-            fetch("http://mtms-band-site.herokuapp.com/getUserData", {
+            fetch("https://mtms-band-site.herokuapp.com/getUserData", {
                 'method': 'GET',
                 'headers': {
                     'Content-Type': 'application/json',
