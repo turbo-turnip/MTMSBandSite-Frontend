@@ -16,7 +16,7 @@ export default function Question(props) {
 
     const replyHandler = e => {
         if (e.target.previousSibling.value !== "") {
-            fetch("/reply", {
+            fetch("http://mtms-band-site.herokuapp.com/reply", {
                 'method': 'POST',
                 'headers': { 'Content-Type': 'application/json' },
                 'body': JSON.stringify({

@@ -8,7 +8,7 @@ export default function Instruments() {
 
     useEffect(() => {
         if (loggedIn) {
-            fetch("/getUserData", {
+            fetch("http://mtms-band-site.herokuapp.com/getUserData", {
                 'method': 'GET',
                 'headers': {
                     'Content-Type': 'application/json',
