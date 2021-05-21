@@ -14,7 +14,7 @@
 
 body {
     background: #fff;
-    overflow-x: hidden
+    overflow-x: hidden;
 }
 
 nav {
@@ -117,7 +117,7 @@ nav .nav-links>a {
 }
 
 .banner {
-    width: 100%;
+    width: 100vw;
     height: calc(100vh - (80px - 1em));
     max-height: 800px;
     margin-top: calc(80px - 1em);
@@ -129,6 +129,7 @@ nav .nav-links>a {
     background-position: top;
     background-size: cover;
     position: relative;
+    left: 0;
     z-index: 1
 }
 
@@ -297,7 +298,9 @@ main .practice-books {
 }
 
 .metronome {
-    width: 500px;
+    max-width: 600px;
+    min-width: 400px;
+    width: 90vw;
     height: 200px;
 }
 
