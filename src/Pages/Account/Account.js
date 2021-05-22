@@ -57,6 +57,7 @@ export default function Questions() {
             })  
                 .then(response => response.json())
                 .then(response => {
+                    localStorage.removeItem("ACCESS_TOKEN");
                     localStorage.removeItem("USER_TOKEN");
                     window.location.href = "/register";
                 });
