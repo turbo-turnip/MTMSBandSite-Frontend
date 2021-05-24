@@ -1534,3 +1534,26 @@ input[type=range]:focus::-ms-fill-upper {
 .instruments + footer {
     display: none;
 }
+.changelog {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5em;
+    width: 100%;
+}
+.changelog .content {
+    width: 90%;
+    margin-top: 1em;
+    max-width: 600px;
+    border: 1px solid #ddd;
+    background: #efefef;
+    padding: .8em 1.5em;
+    border-radius: 6px;
+}
+.changelog .content li {
+    margin-left: 30px;
+}
+.changelog .content h2 {
+    margin-top: 1em;
+}
