@@ -10,6 +10,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Red Hat Display';
+    scroll-behavior: smooth;
 }
 
 body {
@@ -19,6 +20,7 @@ body {
     flex-direction: column;
     overflow-x: hidden;
     padding-bottom: 300px;
+    scroll-behavior: smooth;
 }
 
 @media (max-width: 631px) {
