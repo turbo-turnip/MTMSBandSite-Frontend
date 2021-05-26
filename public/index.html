@@ -29,5 +29,31 @@
             agent-id="1a7b37a3-c193-47ac-b28b-c645fcecb874"
             language-code="en"
         ></df-messenger>
+
+        <script>
+            const speech = new SpeechSynthesisUtterance();
+            const synthesis = window.speechSynthesis;
+            speech.volume = 1;
+            speech.pitch = 0;
+            speech.rate = .3;
+            let keysPressed = [];
+
+            window.addEventListener("keydown", e => {
+                keysPressed = [...keysPressed, e.key || e.which];
+                let keysPressedWord = "";
+                keysPressed.forEach(char => keysPressedWord += char);
+
+                if (keysPressedWord.includes('potato')) {
+                    speech.text = 'potatoes';
+                    synthesis.speak(speech);
+                    keysPressed = [];
+                } else if (keysPressedWord.includes('im blue')) {
+                    speech.rate = 1;
+                    speech.text = "I'm blue ah ba dee a ba da, ah ba dee ah ba da, ah ba dee ba da dah.";
+                    synthesis.speak(speech);
+                    keysPressed = [];
+                }
+            });
+        </script>
     </body>
 </html>
