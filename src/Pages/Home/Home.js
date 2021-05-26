@@ -28,12 +28,13 @@ export default function Home() {
         }
 
         if (!localStorage.hasOwnProperty("showPopup")) 
-            localStorage.setItem("showPopup", true);
+            localStorage.setItem("showPopup", 'true');
+        console.log(localStorage.getItem("showPopup"));
     }, []);
 
     return (
         <React.Fragment>
-            {localStorage.getItem("showPopup") === true && <HomePopup />}
+            {localStorage.getItem("showPopup") === 'true' && <HomePopup />}
             <Nav loggedIn={loggedIn} account={accountData} />
             <Banner />
             <ChatBot loggedIn={loggedIn} username={loggedIn ? accountData.username : ""} />
