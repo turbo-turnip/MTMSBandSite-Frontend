@@ -1539,4 +1539,6 @@ df-messenger {
     --df-messenger-font-color: #fff;
     --df-messenger-send-icon: var(--primary-blue);
     --df-messenger-user-message: var(--primary-blue);
+    resize: both;
+    overflow: auto;
 }
