@@ -29,7 +29,6 @@ export default function Home() {
 
         if (!localStorage.hasOwnProperty("showPopup")) 
             localStorage.setItem("showPopup", 'true');
-        console.log(localStorage.getItem("showPopup"));
     }, []);
 
     return (

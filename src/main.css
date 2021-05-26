@@ -1633,3 +1633,19 @@ input[type=range]:focus::-ms-fill-upper {
     color: #fff;
     cursor: pointer;
 }
+#translator-selector {
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    top: 80vh;
+    transform: rotate(90deg) translateY(140%);
+    background: #fff;
+    padding: .5em .8em;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 0 0px 6px 3px #0003;
+    transition: .4s;
+}
+
+#translator-selector:hover {
+    transform: rotate(90deg) translateY(100%);
+}
