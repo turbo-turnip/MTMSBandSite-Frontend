@@ -4,7 +4,6 @@ import Message from './Message';
 export default function ChatBot(props) {
     const [ messages, setMessages ] = useState([]);
     const [ expanded, setExpanded ] = useState(false);
-    const [ chatPaneScrollY, setChatPaneScrollY ] = useState(0);
     const chatPaneRef = useRef();
 
     const messageSentHandler = e => {
